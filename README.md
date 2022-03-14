@@ -27,15 +27,15 @@ A longer training window produced a better overall performance (particularly in 
 ### Moving average window for predictors
 
 * SMA Fast adjusted up from 4 to 50
-![image info](./Resources/predictions_svm_3mo_sma40_long.png)
+![image info](./Resources/predictions_svm_3mo_sma50_short.png)
 * SMA Slow adjusted down from 100 to 40
 ![image info](./Resources/predictions_svm_3mo_sma40_long.png)
 
 
-Expanding the moving average window of the fast predictor did not improve results. Reducing the window for the slow predictor  from 100 to 40 improved the recall and F1 score for the short trade signal.
+Expanding the moving average window of the fast predictor did not improve results. Reducing the window for the slow predictor from 100 to 40 improved the recall and F1 score for the short trade signal.
 
 ## Tuned Baseline Model
 
-After testing multiple combinations of parameters, the conclusion is that the baseline model using 1 month of training data and the 60 simple moving average for the slow predictor results in a model that beats the market most consistently across the window of time used to backtest the model. This model also has higher recall (albeit still very weak at 9%) for the short trade. 
+After testing multiple combinations of parameters, the conclusion is that the baseline model using 1 month of training data and the 60-hour simple moving average for the slow predictor results in a model that beats the market most consistently. This model also has higher recall (albeit still very weak at 9%) for the short trade. 
 
-![image info](./Resources/predictions_svm_3mo_sma40_long.png)
+![image info](./Resources/predictions_svm_1mo_sma60_long.png)
