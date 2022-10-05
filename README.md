@@ -1,4 +1,4 @@
-# Stock_Trading_w-_Machine_Learning
+# Stock Trading with ML
 An evaluation of machine learning approaches to automated stock trading.
 
 ---
