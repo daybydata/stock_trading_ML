@@ -1,6 +1,8 @@
 # Stock Trading with ML
 An evaluation of machine learning approaches to automated stock trading.
 
+Spoiler alert: This is not a great model, but it is a good resource for refreshing your memory on the steps involved in creating and evaluating a binary classifier.
+
 ---
 # The Baseline Model
  
